@@ -1,5 +1,5 @@
-//routes.tsx
-import { createBrowserRouter } from "react-router-dom";
+// routes.tsx
+import { createHashRouter } from "react-router-dom";
 import { Layout } from "./components/Layout";
 
 // IMPORTS CORRETOS (named exports)
@@ -10,7 +10,7 @@ import { FotosPage } from "./pages/FotosPage";
 import { MissaoPage } from "./pages/MissaoPage";
 import { DocumentosPage } from "./pages/DocumentosPage";
 
-export const router = createBrowserRouter([
+export const router = createHashRouter([
     {
         path: "/",
         Component: Layout,
